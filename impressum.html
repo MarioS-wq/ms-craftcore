@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Impressum – CraftCore | Mario Stefek</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;0,9..144,900;1,9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --ink:#161210;
+  --ink-soft:#3a322d;
+  --paper:#F5F1EA;
+  --paper-warm:#EDE6D9;
+  --line:#d8cfbe;
+  --orange:#D2541A;
+  --orange-deep:#A8401A;
+  --white:#FFFCF5;
+  --display:'Fraunces',Georgia,serif;
+  --body:'Inter',system-ui,sans-serif;
+}
+html{scroll-behavior:smooth;background:var(--paper)}
+body{font-family:var(--body);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased;font-size:16px}
+::selection{background:var(--ink);color:var(--paper)}
+a{color:var(--orange-deep);text-decoration:underline;text-underline-offset:3px}
+a:hover{color:var(--ink)}
+.wrap{max-width:820px;margin:0 auto;padding:0 32px}
+
+/* NAV */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  background:rgba(245,241,234,.92);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+  height:64px;display:flex;align-items:center;
+}
+.nav-inner{display:flex;justify-content:space-between;align-items:center;width:100%}
+.logo{font-family:var(--display);font-size:1.4rem;font-weight:900;letter-spacing:-.03em;text-decoration:none;color:var(--ink);display:flex;align-items:center;gap:10px}
+.logo-mark{
+  width:28px;height:28px;background:var(--orange);
+  display:grid;place-items:center;border-radius:2px;flex-shrink:0;
+  transform:rotate(-4deg);
+}
+.logo-mark svg{stroke:var(--paper)}
+.nav-tel{
+  display:inline-flex;align-items:center;gap:10px;
+  font-weight:700;font-size:.95rem;text-decoration:none;color:var(--ink);
+  font-variant-numeric:tabular-nums;
+  padding:10px 18px;border:1.5px solid var(--ink);border-radius:2px;
+  transition:all .2s ease;
+}
+.nav-tel:hover{background:var(--ink);color:var(--paper)}
+.nav-tel svg{stroke:currentColor}
+@media(max-width:640px){
+  .nav-tel .num-full{display:none}
+  .nav-tel::after{content:"Anrufen";font-weight:700}
+}
+
+/* HEADER */
+.page-header{padding:140px 0 60px;border-bottom:1px solid var(--line)}
+.eyebrow{font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.18em;color:var(--ink-soft);display:inline-flex;align-items:center;gap:10px;margin-bottom:20px}
+.eyebrow::before{content:"";width:24px;height:1px;background:var(--ink)}
+h1{font-family:var(--display);font-size:clamp(2.3rem,4.5vw,3.5rem);font-weight:900;letter-spacing:-.02em;line-height:1.05;margin-bottom:16px}
+.page-header p{color:var(--ink-soft);font-size:1.05rem;max-width:640px}
+.back-link{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:.85rem;font-weight:500;text-decoration:none;color:var(--ink-soft);
+  margin-bottom:32px;
+}
+.back-link:hover{color:var(--orange-deep)}
+
+/* CONTENT */
+.content{padding:60px 0 100px}
+.content h2{font-family:var(--display);font-size:1.5rem;font-weight:700;letter-spacing:-.01em;margin:40px 0 14px;color:var(--ink)}
+.content h2:first-child{margin-top:0}
+.content h3{font-family:var(--display);font-size:1.15rem;font-weight:700;margin:28px 0 10px;color:var(--ink)}
+.content p{color:var(--ink-soft);margin-bottom:14px;font-size:.98rem}
+.content ul{margin:8px 0 16px 0;padding-left:22px}
+.content ul li{color:var(--ink-soft);margin-bottom:6px;font-size:.98rem}
+.content strong{color:var(--ink);font-weight:600}
+.content .info-block{
+  background:var(--white);border:1px solid var(--line);
+  padding:24px 28px;border-radius:2px;margin:20px 0;
+}
+.content .info-block p{margin-bottom:6px}
+.content .info-block .label{
+  font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;
+  color:var(--ink-soft);margin-top:14px;margin-bottom:4px;
+}
+.content .info-block .label:first-child{margin-top:0}
+
+/* FOOTER */
+footer{background:var(--ink);color:rgba(245,241,234,.7);padding:48px 0 28px;border-top:4px solid var(--orange)}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:48px;margin-bottom:36px}
+.footer-brand .logo{color:var(--paper)}
+.footer-brand p{margin-top:14px;font-size:.85rem;line-height:1.65;max-width:280px}
+.footer-tel{
+  margin-top:24px;display:inline-flex;align-items:center;gap:10px;
+  color:var(--orange);font-weight:700;font-size:1.05rem;text-decoration:none;
+  font-variant-numeric:tabular-nums;
+}
+.footer-tel:hover{color:var(--paper)}
+.footer-col h5{color:var(--paper);font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;margin-bottom:18px}
+.footer-col a{display:block;font-size:.88rem;text-decoration:none;margin-bottom:10px;color:rgba(245,241,234,.7);transition:color .2s ease}
+.footer-col a:hover{color:var(--orange)}
+.footer-bottom{
+  border-top:1px solid rgba(245,241,234,.12);padding-top:24px;
+  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;
+  font-size:.78rem;color:rgba(245,241,234,.5);
+}
+.footer-legal{display:flex;gap:18px;flex-wrap:wrap}
+.footer-legal a{color:rgba(245,241,234,.5);text-decoration:none}
+.footer-legal a:hover{color:var(--orange)}
+@media(max-width:780px){.footer-grid{grid-template-columns:1fr;gap:32px}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-inner" style="max-width:1180px">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L7 2l5 10M4.5 8h5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      CraftCore
+    </a>
+    <a href="tel:+436608640360" class="nav-tel">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 3.5C2 2.67 2.67 2 3.5 2h1.31c.31 0 .59.21.66.51l.6 2.4a.7.7 0 01-.18.7l-.96.96c.66 1.37 1.78 2.49 3.15 3.15l.96-.96a.7.7 0 01.7-.18l2.4.6c.3.07.51.35.51.66V11.5c0 .83-.67 1.5-1.5 1.5h-.5C5.91 13 1 8.09 1 2v-.5z" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="num-full">+43 660 8640360</span>
+    </a>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="wrap">
+    <a href="index.html" class="back-link">← Zurück zur Startseite</a>
+    <span class="eyebrow">Rechtliche Information</span>
+    <h1>Impressum</h1>
+    <p>Angaben gemäß §5 ECG (Österreich) und §5 TMG (Deutschland).</p>
+  </div>
+</header>
+
+<main class="content">
+  <div class="wrap">
+
+    <h2>Anbieter / Diensteanbieter</h2>
+    <div class="info-block">
+      <p><strong>Mario Stefek</strong></p>
+      <p>CraftCore</p>
+      <div class="label">Anschrift</div>
+      <p>[Straße und Hausnummer]<br>[PLZ und Ort]<br>Österreich</p>
+      <div class="label">Kontakt</div>
+      <p>Telefon: <a href="tel:+436608640360">+43 660 8640360</a><br>
+      E-Mail: <a href="mailto:office@craftcore.at">office@craftcore.at</a></p>
+      <div class="label">Unternehmensgegenstand</div>
+      <p>Vermittlung vorqualifizierter Anfragen für Handwerksbetriebe</p>
+      <div class="label">UID-Nummer</div>
+      <p>[ATU-Nummer einfügen]</p>
+      <div class="label">Mitgliedschaft</div>
+      <p>Wirtschaftskammer [Bundesland]</p>
+      <div class="label">Anwendbare Rechtsvorschriften</div>
+      <p>Gewerbeordnung (GewO), abrufbar unter <a href="https://www.ris.bka.gv.at" target="_blank" rel="noopener">www.ris.bka.gv.at</a></p>
+      <div class="label">Aufsichtsbehörde</div>
+      <p>Bezirkshauptmannschaft / Magistrat [Ort]</p>
+    </div>
+
+    <h2>Online-Streitbeilegung</h2>
+    <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit, die Sie unter <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener">ec.europa.eu/consumers/odr</a> finden. Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+
+    <h2>Haftung für Inhalte</h2>
+    <p>Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Wir sind nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p>
+
+    <h2>Haftung für Links</h2>
+    <p>Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</p>
+
+    <h2>Urheberrecht</h2>
+    <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem österreichischen bzw. deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
+
+    <h2>Bildnachweis</h2>
+    <p>Sofern nicht anders gekennzeichnet, stammen Bilder und Grafiken auf dieser Website von Mario Stefek / CraftCore oder lizenzierten Stockfotografie-Anbietern.</p>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap" style="max-width:1180px">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L7 2l5 10M4.5 8h5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          CraftCore
+        </a>
+        <p>Vorqualifizierte Premiumaufträge für inhabergeführte Handwerksbetriebe. Seit 2019.</p>
+        <a href="tel:+436608640360" class="footer-tel">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" style="stroke:currentColor"><path d="M2 3.5C2 2.67 2.67 2 3.5 2h1.31c.31 0 .59.21.66.51l.6 2.4a.7.7 0 01-.18.7l-.96.96c.66 1.37 1.78 2.49 3.15 3.15l.96-.96a.7.7 0 01.7-.18l2.4.6c.3.07.51.35.51.66V11.5c0 .83-.67 1.5-1.5 1.5h-.5C5.91 13 1 8.09 1 2v-.5z" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          +43 660 8640360
+        </a>
+      </div>
+      <div class="footer-col">
+        <h5>Navigation</h5>
+        <a href="index.html#rueckruf">Rückruf</a>
+        <a href="index.html#kontakt">Kontakt</a>
+        <a href="tel:+436608640360">Telefon</a>
+      </div>
+      <div class="footer-col">
+        <h5>Rechtliches</h5>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="agb.html">AGB</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>DSGVO-konform · Server in Deutschland</p>
+      <div class="footer-legal">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="agb.html">AGB</a>
+      </div>
+      <p>© 2026 CraftCore · Mario Stefek</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
