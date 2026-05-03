@@ -3,559 +3,77 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CraftCore – Planbare Premiumaufträge für Handwerksbetriebe | Mario Stefek</title>
-<meta name="description" content="Vorqualifizierte Anfragen mit Budget – exklusiv für einen Betrieb pro Region. Direkt anrufen: +43 660 8640360. Mario Stefek, CraftCore.">
+
+<!-- ============================================================
+     SEO / META
+     Tipp: Für scharfe Vorschau bei WhatsApp/Facebook/LinkedIn:
+     - <meta property="og:url"> auf finale Domain umstellen
+     - og:image muss öffentlich erreichbar sein (volle URL)
+     ============================================================ -->
+<title>Mario Stefek – Aufträge für Handwerker. Planbar. Persönlich.</title>
+<meta name="description" content="Anfragen, die wirklich kaufen. Keine Schauer, keine Besserwisser, keine Zahlungs­verzüge. Exklusiv ein Betrieb pro Region. Mario direkt anrufen: +43 660 8640360.">
+<meta name="author" content="Mario Stefek">
+<meta name="keywords" content="Aufträge Handwerker, Kundengewinnung Handwerk, qualifizierte Anfragen, SHK Aufträge, Elektriker Aufträge, Mario Stefek">
+<meta name="theme-color" content="#161210">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.mario-stefek.com/">
+
+<!-- Open Graph / Social Sharing -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mario Stefek – Aufträge für Handwerker. Planbar. Persönlich.">
+<meta property="og:description" content="Anfragen, die kaufen. Nicht vergleichen. Nicht diskutieren. Exklusiv ein Betrieb pro Region.">
+<meta property="og:image" content="https://www.mario-stefek.com/img/mario-handshake-baustelle.jpg">
+<meta property="og:url" content="https://www.mario-stefek.com/">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="Mario Stefek">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mario Stefek – Aufträge für Handwerker">
+<meta name="twitter:description" content="Anfragen, die kaufen. Nicht vergleichen. Nicht diskutieren.">
+<meta name="twitter:image" content="https://www.mario-stefek.com/img/mario-handshake-baustelle.jpg">
+
+<!-- Favicon (inline SVG, kein externes File nötig) -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='14' fill='%23D2541A'/%3E%3Cpath d='M28 78L50 22L72 78M38 60h24' stroke='%23F5F1EA' stroke-width='9' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
+
+<!-- Strukturierte Daten für Google -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Mario Stefek",
+  "description": "Vermittlung vorqualifizierter Anfragen für inhabergeführte Handwerksbetriebe.",
+  "telephone": "+436608640360",
+  "url": "https://www.mario-stefek.com/",
+  "image": "https://www.mario-stefek.com/img/mario-portrait-baustelle.jpg",
+  "priceRange": "€€€",
+  "areaServed": ["AT", "DE"],
+  "founder": {
+    "@type": "Person",
+    "name": "Mario Stefek"
+  }
+}
+</script>
+
+<!-- Fonts: Fraunces (Display) + Inter (Body) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;0,9..144,900;1,9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-:root{
-  --ink:#161210;
-  --ink-soft:#3a322d;
-  --paper:#F5F1EA;
-  --paper-warm:#EDE6D9;
-  --rule:#1d1815;
-  --line:#d8cfbe;
-  --orange:#D2541A;
-  --orange-deep:#A8401A;
-  --mustard:#C18E2B;
-  --green:#2E5D3A;
-  --red:#9C2B1F;
-  --white:#FFFCF5;
-  --display:'Fraunces',Georgia,serif;
-  --body:'Inter',system-ui,sans-serif;
-}
-html{scroll-behavior:smooth;background:var(--paper)}
-body{font-family:var(--body);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;font-size:16px;overflow-x:hidden}
-::selection{background:var(--ink);color:var(--paper)}
-img{max-width:100%;display:block}
-a{color:inherit}
 
-/* ── LAYOUT ── */
-.wrap{max-width:1180px;margin:0 auto;padding:0 32px}
-.wrap-narrow{max-width:820px;margin:0 auto;padding:0 32px}
-
-/* ── TYPE ── */
-.eyebrow{font-family:var(--body);font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.18em;color:var(--ink-soft);display:inline-flex;align-items:center;gap:10px}
-.eyebrow::before{content:"";width:24px;height:1px;background:var(--ink)}
-h1,h2,h3,h4{font-family:var(--display);font-weight:700;letter-spacing:-.02em;color:var(--ink);line-height:1.05}
-h1{font-size:clamp(2.3rem,5.5vw,4.6rem);font-weight:900}
-h2{font-size:clamp(1.8rem,3.8vw,3rem);line-height:1.08}
-h3{font-size:clamp(1.2rem,1.8vw,1.5rem);line-height:1.2}
-em{font-style:italic;color:var(--orange-deep)}
-.lead{font-size:clamp(1.05rem,1.4vw,1.2rem);line-height:1.55;color:var(--ink-soft);font-weight:400}
-
-/* ── PHONE BUTTON (the hero of the page) ── */
-.tel-btn{
-  display:inline-flex;align-items:center;gap:14px;
-  background:var(--ink);color:var(--paper);
-  padding:18px 28px;border-radius:2px;
-  font-family:var(--body);font-weight:700;font-size:1.05rem;letter-spacing:-.01em;
-  text-decoration:none;border:none;cursor:pointer;
-  transition:transform .15s ease,background .2s ease;
-  position:relative;
-}
-.tel-btn:hover{background:var(--orange-deep);transform:translateY(-2px)}
-.tel-btn .ring{
-  width:38px;height:38px;border-radius:50%;
-  background:var(--orange);display:grid;place-items:center;flex-shrink:0;
-  position:relative;
-}
-.tel-btn .ring::before{
-  content:"";position:absolute;inset:-4px;border-radius:50%;
-  border:1.5px solid var(--orange);
-  animation:ring 2s ease-out infinite;opacity:0;
-}
-@keyframes ring{
-  0%{transform:scale(.8);opacity:.8}
-  100%{transform:scale(1.6);opacity:0}
-}
-.tel-btn svg{stroke:var(--paper);flex-shrink:0}
-.tel-btn .num{font-variant-numeric:tabular-nums;font-size:1.1rem}
-.tel-btn .lbl{font-size:.7rem;font-weight:500;text-transform:uppercase;letter-spacing:.12em;opacity:.75;display:block;margin-bottom:1px}
-
-.tel-btn-outline{
-  display:inline-flex;align-items:center;gap:10px;
-  background:transparent;color:var(--ink);
-  padding:17px 26px;border:1.5px solid var(--ink);border-radius:2px;
-  font-weight:600;font-size:.95rem;text-decoration:none;
-  transition:all .2s ease;cursor:pointer;
-}
-.tel-btn-outline:hover{background:var(--ink);color:var(--paper)}
-
-/* ── NAV ── */
-nav{
-  position:fixed;top:0;left:0;right:0;z-index:100;
-  background:rgba(245,241,234,.92);backdrop-filter:blur(12px);
-  border-bottom:1px solid var(--line);
-  height:64px;display:flex;align-items:center;
-}
-.nav-inner{display:flex;justify-content:space-between;align-items:center;width:100%}
-.logo{font-family:var(--display);font-size:1.4rem;font-weight:900;letter-spacing:-.03em;text-decoration:none;color:var(--ink);display:flex;align-items:center;gap:10px}
-.logo-mark{
-  width:28px;height:28px;background:var(--orange);
-  display:grid;place-items:center;border-radius:2px;flex-shrink:0;
-  transform:rotate(-4deg);
-}
-.logo-mark svg{stroke:var(--paper)}
-.nav-tel{
-  display:inline-flex;align-items:center;gap:10px;
-  font-weight:700;font-size:.95rem;text-decoration:none;color:var(--ink);
-  font-variant-numeric:tabular-nums;
-  padding:10px 18px;border:1.5px solid var(--ink);border-radius:2px;
-  transition:all .2s ease;
-}
-.nav-tel:hover{background:var(--ink);color:var(--paper)}
-.nav-tel svg{stroke:currentColor}
-@media(max-width:640px){
-  .nav-tel .num-full{display:none}
-  .nav-tel::after{content:"Anrufen";font-weight:700}
-}
-
-/* ── HERO ── */
-.hero{padding:140px 0 80px;position:relative;overflow:hidden}
-.hero::before{
-  content:"";position:absolute;top:0;right:-120px;width:520px;height:520px;
-  background:radial-gradient(circle,rgba(210,84,26,.08) 0%,transparent 70%);
-  pointer-events:none;
-}
-.hero-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:70px;align-items:center}
-.hero-meta{display:flex;align-items:center;gap:16px;margin-bottom:32px;flex-wrap:wrap}
-.hero-meta-pill{
-  display:inline-flex;align-items:center;gap:8px;
-  background:var(--white);border:1px solid var(--line);
-  padding:7px 14px;border-radius:30px;
-  font-size:.78rem;font-weight:500;color:var(--ink-soft);
-}
-.hero-meta-pill .dot{width:7px;height:7px;border-radius:50%;background:var(--green);animation:pulse 2s infinite}
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
-
-.hero h1{margin-bottom:28px}
-.hero h1 .accent{
-  display:inline-block;position:relative;
-  background:linear-gradient(120deg,transparent 0%,transparent 8%,rgba(210,84,26,.18) 8%,rgba(210,84,26,.18) 92%,transparent 92%);
-}
-.hero-deck{font-size:1.15rem;line-height:1.55;color:var(--ink-soft);margin-bottom:40px;max-width:560px}
-
-.hero-cta-row{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-bottom:36px}
-.hero-or{font-size:.85rem;color:var(--ink-soft);font-style:italic;font-family:var(--display)}
-
-.hero-trust{display:flex;align-items:center;gap:28px;flex-wrap:wrap;padding-top:32px;border-top:1px solid var(--line)}
-.hero-trust-item{display:flex;align-items:center;gap:8px;font-size:.82rem;color:var(--ink-soft);font-weight:500}
-.hero-trust-item svg{stroke:var(--green);flex-shrink:0}
-
-/* Hero visual side */
-.hero-visual{
-  position:relative;aspect-ratio:4/5;
-  background:linear-gradient(160deg,#2c2620 0%,#1a1612 100%);
-  border-radius:3px;overflow:hidden;
-}
-.hero-visual::after{
-  content:"";position:absolute;inset:0;
-  background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60'><path d='M0 30h60M30 0v60' stroke='%23fff' stroke-opacity='0.04' stroke-width='1'/></svg>");
-}
-.hero-visual-inner{
-  position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;
-  padding:36px;color:var(--paper);
-}
-.hero-stamp{
-  align-self:flex-end;
-  border:1.5px solid rgba(210,84,26,.6);color:var(--orange);
-  padding:6px 14px;border-radius:2px;
-  font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.18em;
-  transform:rotate(3deg);
-  font-family:var(--body);
-}
-.hero-quote{font-family:var(--display);font-style:italic;font-size:1.4rem;line-height:1.35;color:var(--paper);margin-bottom:18px}
-.hero-quote-attr{font-size:.78rem;color:rgba(245,241,234,.6);text-transform:uppercase;letter-spacing:.12em;font-weight:600}
-.hero-quote-attr span{color:var(--orange)}
-
-/* tool decoration */
-.hero-tools{
-  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
-  width:65%;opacity:.18;
-}
-
-@media(max-width:900px){
-  .hero{padding:110px 0 60px}
-  .hero-grid{grid-template-columns:1fr;gap:48px}
-  .hero-visual{max-width:420px;aspect-ratio:5/4}
-  .hero-cta-row{flex-direction:column;align-items:stretch}
-  .tel-btn,.tel-btn-outline{justify-content:center}
-  .hero-or{display:none}
-}
-
-/* ── TICKER ── */
-.ticker-bar{
-  background:var(--ink);color:var(--paper);
-  padding:14px 0;overflow:hidden;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);
-}
-.ticker{display:flex;gap:0;animation:tickerScroll 38s linear infinite;width:max-content}
-@keyframes tickerScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-.tk-item{padding:0 36px;font-size:.82rem;font-weight:500;display:flex;align-items:center;gap:12px;white-space:nowrap;color:rgba(245,241,234,.85)}
-.tk-item .tk-num{color:var(--orange);font-weight:700;font-family:var(--display);font-size:.95rem}
-.tk-sep{color:rgba(245,241,234,.25);font-size:1rem}
-
-/* ── SECTIONS ── */
-.section{padding:120px 0}
-.section-sm{padding:80px 0}
-.section-head{margin-bottom:60px;max-width:720px}
-.section-head .eyebrow{margin-bottom:24px}
-.section-head h2{margin-bottom:20px}
-.section-head .lead{color:var(--ink-soft)}
-
-/* ── PROBLEM ── */
-.problem{background:var(--paper-warm);position:relative}
-.problem-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border:1px solid var(--ink);background:var(--ink);margin-top:50px}
-.prob-card{
-  background:var(--paper-warm);padding:40px 36px;
-  position:relative;display:flex;flex-direction:column;gap:14px;
-}
-.prob-num{
-  font-family:var(--display);font-size:.85rem;font-weight:700;
-  color:var(--orange-deep);letter-spacing:.1em;
-}
-.prob-card h3{font-size:1.25rem;margin-bottom:4px}
-.prob-card p{color:var(--ink-soft);font-size:.95rem;line-height:1.6}
-.prob-card .stat{
-  margin-top:auto;padding-top:18px;border-top:1px dashed var(--line);
-  font-family:var(--display);font-size:1.6rem;font-weight:700;color:var(--ink);
-  display:flex;align-items:baseline;gap:10px;
-}
-.prob-card .stat span{font-size:.78rem;color:var(--ink-soft);font-family:var(--body);font-weight:500;letter-spacing:.02em}
-@media(max-width:780px){.problem-grid{grid-template-columns:1fr}}
-
-.problem-quote{
-  margin-top:80px;padding:48px 56px;
-  background:var(--ink);color:var(--paper);
-  border-left:5px solid var(--orange);
-  position:relative;
-}
-.problem-quote p{
-  font-family:var(--display);font-style:italic;font-size:clamp(1.3rem,2.2vw,1.7rem);
-  line-height:1.4;max-width:720px;
-}
-.problem-quote .accent{color:var(--orange)}
-
-/* ── SOLUTION (3 steps) ── */
-.solution{background:var(--paper);position:relative}
-.solution::before{
-  content:"01 / 02 / 03";position:absolute;top:60px;right:32px;
-  font-family:var(--display);font-size:.85rem;letter-spacing:.2em;color:var(--line);
-}
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:50px;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}
-.step{
-  padding:48px 36px 48px 0;border-right:1px solid var(--line);
-  position:relative;
-}
-.step:last-child{border-right:none}
-.step:nth-child(n+2){padding-left:36px}
-.step-num{
-  font-family:var(--display);font-size:3.5rem;font-weight:900;
-  color:var(--orange);line-height:1;margin-bottom:24px;
-  display:flex;align-items:baseline;gap:14px;
-}
-.step-num::after{
-  content:"";flex:1;height:1px;background:var(--line);align-self:center;margin-bottom:8px;
-}
-.step h3{margin-bottom:14px;font-size:1.4rem}
-.step p{color:var(--ink-soft);font-size:.95rem;line-height:1.65;margin-bottom:18px}
-.step-tag{
-  display:inline-block;font-size:.72rem;font-weight:700;
-  text-transform:uppercase;letter-spacing:.12em;
-  color:var(--green);background:rgba(46,93,58,.08);
-  padding:5px 12px;border-radius:2px;
-}
-@media(max-width:900px){
-  .steps{grid-template-columns:1fr;border-bottom:none}
-  .step{border-right:none;border-bottom:1px solid var(--line);padding:40px 0!important}
-  .step:last-child{border-bottom:none}
-}
-
-/* ── BEFORE / AFTER ── */
-.compare{background:var(--ink);color:var(--paper)}
-.compare .eyebrow{color:rgba(245,241,234,.7)}
-.compare .eyebrow::before{background:var(--orange)}
-.compare h2{color:var(--paper)}
-.compare-grid{display:grid;grid-template-columns:1fr auto 1fr;gap:0;margin-top:50px;align-items:stretch}
-.cmp{padding:44px 40px}
-.cmp-bad{background:rgba(156,43,31,.12);border:1px solid rgba(156,43,31,.3)}
-.cmp-good{background:rgba(46,93,58,.15);border:1px solid rgba(46,93,58,.4)}
-.cmp-vs{display:grid;place-items:center;padding:0 24px;font-family:var(--display);font-size:1.2rem;font-style:italic;color:rgba(245,241,234,.4)}
-.cmp h3{font-size:1.15rem;margin-bottom:24px;color:var(--paper)}
-.cmp-bad h3{color:#E89289}
-.cmp-good h3{color:#A3CFAB}
-.cmp-list{list-style:none;display:flex;flex-direction:column;gap:14px}
-.cmp-list li{display:flex;align-items:flex-start;gap:12px;font-size:.92rem;line-height:1.55;color:rgba(245,241,234,.85)}
-.cmp-list li::before{
-  content:"";width:18px;height:18px;border-radius:50%;flex-shrink:0;margin-top:2px;
-  display:grid;place-items:center;
-}
-.cmp-bad li::before{background:rgba(156,43,31,.3);box-shadow:inset 0 0 0 1px rgba(232,146,137,.4)}
-.cmp-good li::before{background:rgba(46,93,58,.4);box-shadow:inset 0 0 0 1px rgba(163,207,171,.5)}
-.cmp-bad li::after,.cmp-good li::after{position:absolute}
-.cmp-bad li{position:relative}
-.cmp-bad li::before{background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10' fill='none'><path d='M2 2l6 6M8 2l-6 6' stroke='%23E89289' stroke-width='1.5' stroke-linecap='round'/></svg>");background-repeat:no-repeat;background-position:center}
-.cmp-good li{position:relative}
-.cmp-good li::before{background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10' fill='none'><path d='M2 5l2 2 4-4' stroke='%23A3CFAB' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></svg>");background-repeat:no-repeat;background-position:center}
-@media(max-width:780px){
-  .compare-grid{grid-template-columns:1fr}
-  .cmp-vs{padding:18px 0;writing-mode:horizontal-tb}
-}
-
-/* ── PROOF / TESTIMONIALS ── */
-.proof{background:var(--paper)}
-.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:50px}
-.testi{
-  background:var(--white);border:1px solid var(--line);
-  padding:36px 32px;display:flex;flex-direction:column;gap:18px;
-  position:relative;border-radius:2px;
-}
-.testi::before{
-  content:"\201C";position:absolute;top:8px;right:24px;
-  font-family:var(--display);font-size:5rem;color:var(--orange);opacity:.18;line-height:1;
-}
-.testi-stars{color:var(--orange);font-size:.95rem;letter-spacing:3px}
-.testi-q{font-family:var(--display);font-size:1.05rem;line-height:1.5;color:var(--ink);font-style:italic;flex:1}
-.testi-attr{padding-top:16px;border-top:1px solid var(--line)}
-.testi-attr .name{font-weight:700;font-size:.92rem;color:var(--ink);margin-bottom:3px}
-.testi-attr .meta{font-size:.78rem;color:var(--ink-soft)}
-@media(max-width:900px){.testi-grid{grid-template-columns:1fr;gap:18px}}
-
-.results{
-  display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:60px;
-  border:1px solid var(--ink);
-}
-.result{padding:32px 28px;border-right:1px solid var(--line);text-align:center}
-.result:last-child{border-right:none}
-.result .num{font-family:var(--display);font-size:clamp(2.2rem,4vw,3.2rem);font-weight:900;color:var(--orange);line-height:1}
-.result .lbl{font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;color:var(--ink-soft);font-weight:600;margin-top:10px}
-@media(max-width:780px){
-  .results{grid-template-columns:repeat(2,1fr)}
-  .result:nth-child(2){border-right:none}
-  .result:nth-child(1),.result:nth-child(2){border-bottom:1px solid var(--line)}
-}
-
-/* ── PHONE BREAK – urgency strip ── */
-.phone-break{
-  background:var(--orange);color:var(--paper);
-  padding:60px 0;position:relative;overflow:hidden;
-}
-.phone-break::before{
-  content:"";position:absolute;inset:0;
-  background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40'><path d='M0 0l40 40M40 0L0 40' stroke='%23fff' stroke-opacity='0.06' stroke-width='1'/></svg>");
-}
-.phone-break-inner{
-  position:relative;display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap;
-}
-.phone-break-text h3{color:var(--paper);font-size:clamp(1.4rem,2.5vw,2rem);margin-bottom:8px;line-height:1.15}
-.phone-break-text p{color:rgba(255,252,245,.85);font-size:1rem;max-width:560px}
-.phone-break .tel-btn{background:var(--paper);color:var(--ink)}
-.phone-break .tel-btn:hover{background:var(--white)}
-.phone-break .tel-btn .ring{background:var(--orange)}
-.phone-break .tel-btn svg{stroke:var(--ink)}
-
-/* ── ABOUT / MARIO ── */
-.about{background:var(--paper-warm);position:relative}
-.about-grid{display:grid;grid-template-columns:380px 1fr;gap:80px;align-items:center}
-.about-card{
-  background:var(--white);border:1px solid var(--line);padding:8px;
-  border-radius:2px;position:relative;
-}
-.about-card::before{
-  content:"";position:absolute;top:-12px;left:-12px;right:12px;bottom:12px;
-  border:1.5px solid var(--ink);border-radius:2px;z-index:-1;
-}
-.about-portrait{
-  aspect-ratio:4/5;width:100%;
-  background:linear-gradient(160deg,#3a322d 0%,#1d1815 100%);
-  position:relative;overflow:hidden;border-radius:1px;
-  display:grid;place-items:center;
-}
-.about-portrait::after{
-  content:"";position:absolute;inset:0;
-  background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><circle cx='100' cy='100' r='80' fill='none' stroke='%23D2541A' stroke-opacity='0.15' stroke-width='1'/></svg>") center/contain no-repeat;
-}
-.about-portrait .avatar-letter{
-  font-family:var(--display);font-size:6rem;font-weight:900;color:var(--orange);
-  position:relative;z-index:2;
-}
-.about-card-foot{padding:18px 12px 8px;text-align:center}
-.about-card-foot .name{font-family:var(--display);font-weight:700;font-size:1.1rem}
-.about-card-foot .role{font-size:.78rem;color:var(--ink-soft);margin-top:2px}
-
-.about-content h2{margin-bottom:24px}
-.about-content p{font-size:1rem;line-height:1.7;color:var(--ink-soft);margin-bottom:16px}
-.about-content strong{color:var(--ink);font-weight:600}
-.about-cta{margin-top:32px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
-.about-sig{
-  font-family:var(--display);font-style:italic;font-size:1.6rem;
-  color:var(--ink);margin-top:24px;display:inline-block;
-  border-bottom:1px solid var(--ink);padding-bottom:4px;
-}
-
-@media(max-width:900px){
-  .about-grid{grid-template-columns:1fr;gap:48px}
-  .about-card{max-width:340px;margin:0 auto}
-}
-
-/* ── FAQ ── */
-.faq{background:var(--paper)}
-.faq-list{margin-top:50px;border-top:1px solid var(--ink)}
-.faq-item{border-bottom:1px solid var(--line);transition:background .2s ease}
-.faq-item:hover{background:var(--paper-warm)}
-.faq-q{
-  display:flex;justify-content:space-between;align-items:center;gap:24px;
-  padding:24px 4px;cursor:pointer;font-weight:600;font-size:1.02rem;
-}
-.faq-plus{
-  width:32px;height:32px;border:1.5px solid var(--ink);border-radius:50%;
-  display:grid;place-items:center;flex-shrink:0;font-size:1.1rem;color:var(--ink);
-  transition:transform .3s ease,background .2s ease;
-}
-.faq-item.open .faq-plus{transform:rotate(45deg);background:var(--orange);color:var(--paper);border-color:var(--orange)}
-.faq-a{
-  max-height:0;overflow:hidden;transition:max-height .35s ease;
-  font-size:.95rem;line-height:1.65;color:var(--ink-soft);
-}
-.faq-item.open .faq-a{max-height:500px;padding:0 4px 24px;border-top:1px dashed var(--line)}
-.faq-item.open .faq-a{padding-top:18px}
-
-/* ── FINAL CTA ── */
-.final{
-  background:var(--ink);color:var(--paper);padding:120px 0;
-  position:relative;overflow:hidden;
-}
-.final::before{
-  content:"";position:absolute;top:-200px;right:-200px;width:600px;height:600px;
-  border-radius:50%;background:radial-gradient(circle,rgba(210,84,26,.18) 0%,transparent 70%);
-}
-.final-inner{position:relative;text-align:center;max-width:760px;margin:0 auto}
-.final h2{color:var(--paper);margin-bottom:24px;font-size:clamp(2rem,4.2vw,3.4rem)}
-.final h2 em{color:var(--orange);font-style:italic}
-.final-deck{font-size:1.1rem;color:rgba(245,241,234,.8);line-height:1.6;margin-bottom:40px;max-width:580px;margin-left:auto;margin-right:auto}
-.final-cta-stack{display:flex;flex-direction:column;align-items:center;gap:18px;margin-bottom:36px}
-.final .tel-btn{
-  background:var(--orange);color:var(--paper);
-  padding:24px 36px;font-size:1.2rem;
-}
-.final .tel-btn:hover{background:var(--paper);color:var(--ink)}
-.final .tel-btn:hover svg{stroke:var(--ink)}
-.final .tel-btn:hover .ring{background:var(--ink)}
-.final .tel-btn .ring{background:rgba(255,252,245,.18)}
-.final .tel-btn .num{font-size:1.4rem}
-.final-or{font-size:.85rem;color:rgba(245,241,234,.55);font-style:italic;font-family:var(--display)}
-.final-form-link{
-  color:var(--paper);text-decoration:underline;text-underline-offset:4px;
-  font-size:.95rem;font-weight:500;
-}
-.final-trust{display:flex;justify-content:center;gap:32px;flex-wrap:wrap;padding-top:36px;border-top:1px solid rgba(245,241,234,.15)}
-.final-trust-item{display:flex;align-items:center;gap:8px;font-size:.82rem;color:rgba(245,241,234,.7)}
-.final-trust-item svg{stroke:var(--orange);flex-shrink:0}
-
-/* ── FORM (callback) ── */
-.callback{background:var(--paper-warm);padding:80px 0}
-.callback-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
-.callback-text h3{font-size:clamp(1.6rem,2.8vw,2.2rem);margin-bottom:16px}
-.callback-text p{color:var(--ink-soft);font-size:1rem;line-height:1.6;margin-bottom:24px}
-.callback-text .or-tel{
-  display:inline-flex;align-items:center;gap:10px;
-  font-family:var(--display);font-style:italic;color:var(--ink);
-  font-size:1.05rem;
-}
-.callback-text .or-tel a{color:var(--orange-deep);font-weight:700;font-style:normal;font-family:var(--body);text-decoration:none;border-bottom:1.5px solid var(--orange-deep)}
-.callback-form{background:var(--white);border:1px solid var(--line);padding:36px;border-radius:2px}
-.fg{margin-bottom:16px}
-.fg label{display:block;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-soft);margin-bottom:6px}
-.fg input,.fg select{
-  width:100%;padding:13px 16px;background:var(--paper);
-  border:1.5px solid var(--line);border-radius:2px;
-  font-family:var(--body);font-size:.95rem;color:var(--ink);outline:none;
-  transition:border-color .15s ease;
-}
-.fg input:focus,.fg select:focus{border-color:var(--ink)}
-.form-submit{
-  width:100%;background:var(--ink);color:var(--paper);
-  padding:16px;border:none;border-radius:2px;
-  font-family:var(--body);font-weight:700;font-size:1rem;cursor:pointer;
-  transition:background .2s ease;
-}
-.form-submit:hover{background:var(--orange-deep)}
-.form-note{font-size:.75rem;color:var(--ink-soft);text-align:center;margin-top:12px}
-.form-success{display:none;text-align:center;padding:32px}
-.form-success.show{display:block}
-.form-success .check{
-  width:54px;height:54px;border-radius:50%;background:var(--green);
-  color:var(--paper);font-size:1.6rem;display:grid;place-items:center;margin:0 auto 16px;
-}
-.form-success h4{font-size:1.3rem;margin-bottom:8px}
-.form-success p{color:var(--ink-soft);font-size:.95rem}
-@media(max-width:780px){.callback-grid{grid-template-columns:1fr;gap:40px}}
-
-/* ── FOOTER ── */
-footer{background:var(--ink);color:rgba(245,241,234,.7);padding:60px 0 28px;border-top:4px solid var(--orange)}
-.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:48px;margin-bottom:48px}
-.footer-brand .logo{color:var(--paper)}
-.footer-brand p{margin-top:14px;font-size:.85rem;line-height:1.65;max-width:280px}
-.footer-tel{
-  margin-top:24px;display:inline-flex;align-items:center;gap:10px;
-  color:var(--orange);font-weight:700;font-size:1.05rem;text-decoration:none;
-  font-variant-numeric:tabular-nums;
-}
-.footer-tel:hover{color:var(--paper)}
-.footer-col h5{color:var(--paper);font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;margin-bottom:18px}
-.footer-col a{display:block;font-size:.88rem;text-decoration:none;margin-bottom:10px;color:rgba(245,241,234,.7);transition:color .2s ease}
-.footer-col a:hover{color:var(--orange)}
-.footer-bottom{
-  border-top:1px solid rgba(245,241,234,.12);padding-top:24px;
-  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;
-  font-size:.78rem;color:rgba(245,241,234,.5);
-}
-.footer-legal{display:flex;gap:18px;flex-wrap:wrap}
-.footer-legal a{color:rgba(245,241,234,.5);text-decoration:none;transition:color .2s ease}
-.footer-legal a:hover{color:var(--orange)}
-@media(max-width:780px){.footer-grid{grid-template-columns:1fr;gap:32px}}
-
-/* ── STICKY BOTTOM TEL (mobile) ── */
-.sticky-tel{
-  display:none;position:fixed;bottom:0;left:0;right:0;z-index:90;
-  background:var(--ink);border-top:2px solid var(--orange);
-  padding:12px 16px;
-}
-.sticky-tel a{
-  display:flex;align-items:center;justify-content:center;gap:12px;
-  background:var(--orange);color:var(--paper);
-  padding:14px;border-radius:2px;text-decoration:none;
-  font-weight:700;font-size:1rem;
-}
-@media(max-width:780px){
-  .sticky-tel{display:block}
-  body{padding-bottom:80px}
-}
-
-/* ── SCROLL FADE ── */
-.fade-up{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
-.fade-up.in{opacity:1;transform:translateY(0)}
-
-/* utility */
-.hide-mobile{}
-@media(max-width:640px){.hide-mobile{display:none}}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- ── NAV ── -->
 <nav>
   <div class="wrap nav-inner">
-    <a href="#" class="logo">
-      <span class="logo-mark">
+    <a href="#" class="logo" aria-label="Mario Stefek – Startseite">
+      <span class="logo-mark" aria-hidden="true">
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L7 2l5 10M4.5 8h5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </span>
-      CraftCore
+      Mario Stefek
     </a>
-    <a href="tel:+436608640360" class="nav-tel">
-      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 3.5C2 2.67 2.67 2 3.5 2h1.31c.31 0 .59.21.66.51l.6 2.4a.7.7 0 01-.18.7l-.96.96c.66 1.37 1.78 2.49 3.15 3.15l.96-.96a.7.7 0 01.7-.18l2.4.6c.3.07.51.35.51.66V11.5c0 .83-.67 1.5-1.5 1.5h-.5C5.91 13 1 8.09 1 2v-.5z" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <a href="tel:+436608640360" class="nav-tel" aria-label="Mario Stefek anrufen">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 3.5C2 2.67 2.67 2 3.5 2h1.31c.31 0 .59.21.66.51l.6 2.4a.7.7 0 01-.18.7l-.96.96c.66 1.37 1.78 2.49 3.15 3.15l.96-.96a.7.7 0 01.7-.18l2.4.6c.3.07.51.35.51.66V11.5c0 .83-.67 1.5-1.5 1.5h-.5C5.91 13 1 8.09 1 2v-.5z" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
       <span class="num-full">+43 660 8640360</span>
     </a>
   </div>
@@ -576,76 +94,78 @@ footer{background:var(--ink);color:rgba(245,241,234,.7);padding:60px 0 28px;bord
           Nicht <em>diskutieren.</em>
         </h1>
         <p class="hero-deck">
-          Kunden, die wissen <strong>was sie brauchen, was es kostet und wann sie zahlen</strong>. Keine Schauer, die nur "mal einen Kostenvoranschlag" wollen. Keine YouTube-Profis, die alles besser wissen. Keine Sonderwünsche, die sich keiner ausgedacht hätte. Ein Betrieb pro Region — und Ruhe.
+          Sie bekommen Anfragen von Kunden, die wissen <strong>was sie brauchen</strong>, einen <strong>echten Budget­rahmen</strong> haben und <strong>jetzt</strong> beauftragen wollen. Keine Schauer. Keine YouTube-Profis. Keine Sonderwünsche, die niemand bestellt hat.
+          <br><br>Ein Betrieb pro Region. Mehr nicht.
         </p>
         <div class="hero-cta-row">
           <a href="tel:+436608640360" class="tel-btn">
-            <span class="ring">
+            <span class="ring" aria-hidden="true">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2.5 3.5C2.5 2.67 3.17 2 4 2h1.5c.32 0 .6.22.67.53l.7 2.8a.7.7 0 01-.18.7l-1.1 1.1c.78 1.6 2.1 2.92 3.7 3.7l1.1-1.1a.7.7 0 01.7-.18l2.8.7c.31.07.53.35.53.67V12.5c0 .83-.67 1.5-1.5 1.5H12C6.48 14 2 9.52 2 4v-.5z" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </span>
             <span>
-              <span class="lbl">Mario Stefek direkt anrufen</span>
+              <span class="lbl">Mario direkt anrufen</span>
               <span class="num">+43 660 8640360</span>
             </span>
           </a>
           <span class="hero-or">oder</span>
-          <a href="#rueckruf" class="tel-btn-outline">Rückruf anfordern</a>
+          <a href="#kontakt" class="btn btn-outline">Per WhatsApp anfragen</a>
         </div>
         <div class="hero-trust">
           <div class="hero-trust-item">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l3 3 7-7" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7l3 3 7-7" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
             Monatlich kündbar
           </div>
           <div class="hero-trust-item">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l3 3 7-7" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7l3 3 7-7" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
             Gebietsschutz garantiert
           </div>
           <div class="hero-trust-item">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l3 3 7-7" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7l3 3 7-7" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
             30 Tage Geld-zurück
           </div>
         </div>
       </div>
       <div class="hero-visual">
-        <div class="hero-visual-inner">
-          <span class="hero-stamp">Verifiziert · Edition 2026</span>
+        <img src="img/mario-handshake-baustelle.jpg" alt="Mario Stefek begrüßt einen Handwerker auf der Baustelle, Bauplan und Maßband im Vordergrund" class="hero-img" loading="eager" fetchpriority="high">
+        <div class="hero-visual-overlay">
+          <span class="hero-stamp">Persönlich · seit 2019</span>
           <div>
-            <p class="hero-quote">„Erstes Gespräch, sauber kalkuliertes Angebot, Auftrag — meistens am selben Tag. Keine Diskussion, keine Nachverhandlung."</p>
-            <p class="hero-quote-attr">Steinbacher Elektro · <span>Bayern · seit 9 Monaten Partner</span></p>
+            <p class="hero-quote">„Ich vermittle nur Anfragen, bei denen ich selbst beauftragen würde. Dafür stehe ich mit meinem Namen ein."</p>
+            <p class="hero-quote-attr">Mario Stefek</p>
           </div>
         </div>
-        <svg class="hero-tools" viewBox="0 0 200 200" fill="none">
-          <path d="M40 160 L60 140 L80 160 M70 150 L130 90 L150 70 L170 50 L180 40" stroke="#D2541A" stroke-width="2" stroke-linecap="round"/>
-          <circle cx="60" cy="140" r="6" stroke="#D2541A" stroke-width="2"/>
-          <path d="M30 30 L50 30 L50 50 L30 50 Z M40 30 L40 20" stroke="#D2541A" stroke-width="2"/>
-        </svg>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ── TICKER ── -->
-<div class="ticker-bar">
+<div class="ticker-bar" aria-hidden="true">
   <div class="ticker">
-    <div class="tk-item"><span class="tk-num">14 Tage</span> Ø Zahlungseingang · Axhijaj, Wien</div>
+    <div class="tk-item"><span class="tk-num">·</span> Vorqualifizierte Anfragen mit Budget</div>
     <span class="tk-sep">/</span>
-    <div class="tk-item"><span class="tk-num">1 Tag</span> vom Anruf zum Angebot · Steinbacher, Bayern</div>
+    <div class="tk-item"><span class="tk-num">·</span> Ein Betrieb pro Region und Gewerk</div>
     <span class="tk-sep">/</span>
-    <div class="tk-item"><span class="tk-num">0</span> Schau-Termine · Dachdecker Mayer, München</div>
+    <div class="tk-item"><span class="tk-num">·</span> Monatlich kündbar</div>
     <span class="tk-sep">/</span>
-    <div class="tk-item"><span class="tk-num">100 %</span> Anzahlung-Quote · SHK Brenner, Graz</div>
+    <div class="tk-item"><span class="tk-num">·</span> 30 Tage Geld-zurück-Garantie</div>
     <span class="tk-sep">/</span>
-    <div class="tk-item"><span class="tk-num">−70 %</span> Diskussionen am Tel. · Maler Schreiber, Hamburg</div>
+    <div class="tk-item"><span class="tk-num">·</span> Mario persönlich, kein Callcenter</div>
     <span class="tk-sep">/</span>
-    <div class="tk-item"><span class="tk-num">14 Tage</span> Ø Zahlungseingang · Axhijaj, Wien</div>
+    <div class="tk-item"><span class="tk-num">·</span> Keine Provision pro Auftrag</div>
     <span class="tk-sep">/</span>
-    <div class="tk-item"><span class="tk-num">1 Tag</span> vom Anruf zum Angebot · Steinbacher, Bayern</div>
+    <!-- duplikat für nahtlose Schleife -->
+    <div class="tk-item"><span class="tk-num">·</span> Vorqualifizierte Anfragen mit Budget</div>
     <span class="tk-sep">/</span>
-    <div class="tk-item"><span class="tk-num">0</span> Schau-Termine · Dachdecker Mayer, München</div>
+    <div class="tk-item"><span class="tk-num">·</span> Ein Betrieb pro Region und Gewerk</div>
     <span class="tk-sep">/</span>
-    <div class="tk-item"><span class="tk-num">100 %</span> Anzahlung-Quote · SHK Brenner, Graz</div>
+    <div class="tk-item"><span class="tk-num">·</span> Monatlich kündbar</div>
     <span class="tk-sep">/</span>
-    <div class="tk-item"><span class="tk-num">−70 %</span> Diskussionen am Tel. · Maler Schreiber, Hamburg</div>
+    <div class="tk-item"><span class="tk-num">·</span> 30 Tage Geld-zurück-Garantie</div>
+    <span class="tk-sep">/</span>
+    <div class="tk-item"><span class="tk-num">·</span> Mario persönlich, kein Callcenter</div>
+    <span class="tk-sep">/</span>
+    <div class="tk-item"><span class="tk-num">·</span> Keine Provision pro Auftrag</div>
   </div>
 </div>
 
@@ -653,40 +173,40 @@ footer{background:var(--ink);color:rgba(245,241,234,.7);padding:60px 0 28px;bord
 <section class="section problem">
   <div class="wrap">
     <div class="section-head fade-up">
-      <span class="eyebrow">Das eigentliche Problem</span>
-      <h2>Es liegt nicht an Ihrer Arbeit.<br>Es liegt an den Anfragen.</h2>
-      <p class="lead">Sie sind ein guter Handwerker. Sie kalkulieren sauber. Sie halten Termine. Aber die Kunden, die heute anrufen, machen das alles unmöglich. Vier Realitäten, die jeder Inhaber kennt:</p>
+      <span class="eyebrow">Das nervt jeden Inhaber</span>
+      <h2>Sie sind nicht zu schlecht.<br>Das System ist falsch.</h2>
+      <p class="lead">Vier Probleme, die Sie nicht weniger Aufträge kosten, sondern jeden Auftrag <em>schlechter</em> machen — Marge, Nerven, Schlaf.</p>
     </div>
 
     <div class="problem-grid fade-up">
       <div class="prob-card">
-        <span class="prob-num">PROBLEM 01</span>
+        <span class="prob-num">Problem 01</span>
         <h3>„Ich schau mich nur mal um."</h3>
-        <p>Drei Stunden Beratung. Aufmaß vor Ort. Detailliertes Angebot. Und dann: „Wir entscheiden uns nächstes Jahr." Oder: nichts mehr. Anfragen ohne Kaufabsicht stehlen Ihre wertvollste Zeit — die für echte Aufträge.</p>
-        <div class="stat">4 von 5 <span>Anfragen ohne Auftrag</span></div>
+        <p>Drei Stunden Aufmaß, sauberes Angebot, dann Funkstille. Oder noch schlimmer: Verglichen mit einem Pfusch-Anbieter. Sie haben die Zeit nie zurück.</p>
+        <div class="stat">4 von 5 <span>Angeboten ohne Auftrag</span></div>
       </div>
       <div class="prob-card">
-        <span class="prob-num">PROBLEM 02</span>
-        <h3>Angebote unter Zeitdruck — voller Risiko</h3>
-        <p>Der Kunde will das Angebot „bis Freitag". Sie kalkulieren abends, übersehen eine Position, der Preis ist zu knapp. Entweder: Sie verlieren Marge. Oder: Sie verlieren den Auftrag, weil ein anderer schneller war.</p>
-        <div class="stat">−18 % <span>Marge durch Hektik-Angebote</span></div>
+        <span class="prob-num">Problem 02</span>
+        <h3>Angebot unter Zeitdruck</h3>
+        <p>Der Kunde drängelt. Sie kalkulieren in der Mittagspause. Marge weg, Material falsch geschätzt. Hektik kostet Sie Geld — jedes Mal.</p>
+        <div class="stat">Hektik <span>= verlorene Marge</span></div>
       </div>
       <div class="prob-card">
-        <span class="prob-num">PROBLEM 03</span>
+        <span class="prob-num">Problem 03</span>
         <h3>1.000 Extrawünsche. Kein Sinn.</h3>
-        <p>„Können wir die Leitung auch noch hier verlegen?" — „Mein Schwager hat gesagt, dass…" — „Im Internet hab ich gelesen…" Kunden, die alles besser wissen, halten Ihren Betrieb stundenlang auf und reden Ihnen ins Handwerk.</p>
-        <div class="stat">3–5 h <span>Diskussionen pro Projekt</span></div>
+        <p>„Mein Schwager sagt…" oder „Im Internet steht…". Sie diskutieren über Dinge, die jeder Geselle im Schlaf weiß. Und am Ende verhandelt der Kunde noch den Preis.</p>
+        <div class="stat">Diskussion <span>statt Wertschätzung</span></div>
       </div>
       <div class="prob-card">
-        <span class="prob-num">PROBLEM 04</span>
+        <span class="prob-num">Problem 04</span>
         <h3>Geld kommt rein. Irgendwann.</h3>
-        <p>Die Arbeit ist fertig, abgenommen, rechnung ist raus. Und dann: 30 Tage warten. 60. Mahnung. Zweite Mahnung. Sie haben Ihren Lieferanten längst bezahlt — und finanzieren die Baustelle quasi selbst.</p>
-        <div class="stat">42 Tage <span>Ø Zahlungsziel im Handwerk</span></div>
+        <p>Sie haben das Material bezahlt. Die Mannschaft bezahlt. Den LKW bezahlt. Der Kunde zahlt nach Mahnung Nummer zwei. So geht Liquidität kaputt.</p>
+        <div class="stat">42 Tage <span>Ø Zahlungsziel</span></div>
       </div>
     </div>
 
     <div class="problem-quote fade-up">
-      <p>Sie wollen kein Marketing-Wunder. Sie wollen <span class="accent">Anfragen, bei denen kalkuliert wird, abgeschlossen wird, gearbeitet wird — und pünktlich gezahlt wird.</span> Punkt.</p>
+      <p>Sie kämpfen täglich um <span class="accent">dieselbe Anerkennung</span> — und denselben Preis — wie Betriebe, die Ihnen handwerklich nicht das Wasser reichen können. Das muss aufhören.</p>
     </div>
   </div>
 </section>
@@ -695,44 +215,77 @@ footer{background:var(--ink);color:rgba(245,241,234,.7);padding:60px 0 28px;bord
 <section class="section solution">
   <div class="wrap">
     <div class="section-head fade-up">
-      <span class="eyebrow">Was wir anders machen</span>
-      <h2>Anfragen, die schon<br>vor­geprüft sind. Ehrlich.</h2>
-      <p class="lead">Wir filtern, bevor Sie ans Telefon gehen. Was bei Ihnen ankommt, hat eine klare Aufgabe, ein realistisches Budget und einen Kunden, der sich auf Ihre Expertise verlässt — nicht darauf wartet, sie zu hinterfragen.</p>
+      <span class="eyebrow">Die Lösung</span>
+      <h2>Drei Schritte zu Aufträgen,<br>die wirklich Sinn ergeben.</h2>
+      <p class="lead">Keine Plattform. Kein Lead-Verkauf. Ein Betrieb pro Region und Gewerk — Ihrer.</p>
     </div>
 
     <div class="steps">
-      <div class="step fade-up">
+      <article class="step fade-up">
         <div class="step-num">01</div>
         <h3>Wir filtern den Müll raus.</h3>
-        <p>Kein Budget? Raus. Will „nur mal schauen"? Raus. Glaubt, er weiß es selber besser? Raus. Was bei Ihnen ankommt: Klarer Auftrag, realistische Erwartung, Entscheidung getroffen.</p>
-        <span class="step-tag">Geprüft vor Übergabe</span>
-      </div>
-      <div class="step fade-up">
+        <p>Schau-Kunden, Vergleichs­dreher, Besserwisser, Zahlungs­vermeider — alles, was nichts bringt, kommt gar nicht erst zu Ihnen. Was kommt: Bedarf real, Budget geprüft, Entscheidung gefallen.</p>
+        <span class="step-tag">Vorqualifiziert · vorgefiltert</span>
+      </article>
+      <article class="step fade-up">
         <div class="step-num">02</div>
         <h3>Sie kalkulieren in Ruhe.</h3>
-        <p>Sie bekommen alle Projektdaten kompakt: Aufgabe, Rahmen, Budget, Zeitplan. Kein Aufmaß-Marathon vor dem Angebot, keine 50 Rückfragen. Sie können sauber kalkulieren — und schnell antworten.</p>
-        <span class="step-tag">Angebot in 1 Tag möglich</span>
-      </div>
-      <div class="step fade-up">
+        <p>Sie bekommen alle Eckdaten kompakt: Objekt, Bedarf, Budget­rahmen, Zeit­fenster. Kein Aufmaß-Marathon mehr für nichts. Sauber kalkuliert — nicht heruntergekloppt.</p>
+        <span class="step-tag">Saubere Datenbasis</span>
+      </article>
+      <article class="step fade-up">
         <div class="step-num">03</div>
         <h3>Kunde zahlt. Pünktlich.</h3>
-        <p>Wir erklären dem Kunden vorab Zahlungs­bedingungen, Anzahlungs­regelung und realistische Zeitrahmen. Wer das nicht akzeptiert, kommt nicht zu Ihnen. Wer kommt, hält sich daran.</p>
-        <span class="step-tag">Anzahlung ist Standard</span>
-      </div>
+        <p>Wir klären vorab: Anzahlung, Zahlungs­bedingungen, realistische Termine. Wer das nicht akzeptiert, kommt nicht zu Ihnen. Wer kommt, hält sich daran.</p>
+        <span class="step-tag">Anzahlung als Standard</span>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- ── PHONE BREAK 1 ── -->
+<!-- ── GALLERY (Glaubwürdigkeit, Mario im Handwerker-Kontext) ── -->
+<section class="gallery">
+  <div class="wrap">
+    <div class="gallery-head fade-up">
+      <span class="eyebrow">Auf Augenhöhe</span>
+      <h2>Wer Handwerkern hilft,<br>muss Handwerk verstehen.</h2>
+    </div>
+    <div class="gallery-grid fade-up">
+      <figure class="gal-item">
+        <img src="img/mario-bauplan.jpg" alt="Mario Stefek bespricht Baupläne mit einem Polier auf der Baustelle" loading="lazy">
+        <figcaption>
+          <span class="cap-num">01</span>
+          Auf der Baustelle. Nicht im Marketing-Office.
+        </figcaption>
+      </figure>
+      <figure class="gal-item">
+        <img src="img/mario-heizung.jpg" alt="Mario Stefek vor einer Wärmepumpen-Installation gemeinsam mit einem SHK-Techniker" loading="lazy">
+        <figcaption>
+          <span class="cap-num">02</span>
+          Aus dem SHK-Vertrieb. Kennt Ihren Alltag.
+        </figcaption>
+      </figure>
+      <figure class="gal-item">
+        <img src="img/mario-handshake-baustelle.jpg" alt="Mario Stefek schüttelt einem Handwerker mit Warnweste die Hand" loading="lazy">
+        <figcaption>
+          <span class="cap-num">03</span>
+          Persönlich. Handschlag­qualität, kein Callcenter.
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ── PHONE BREAK ── -->
 <section class="phone-break">
   <div class="wrap">
     <div class="phone-break-inner">
       <div class="phone-break-text">
         <h3>20 Minuten am Telefon. Dann wissen Sie's.</h3>
-        <p>Mario erklärt Ihnen ehrlich, was Sie bekommen, was es kostet und ob Ihre Region noch frei ist. Wenn's nicht passt, sagt er das. Kein Verkaufsgespräch — versprochen.</p>
+        <p>Mario erklärt Ihnen ehrlich, was Sie bekommen, was es kostet und ob Ihre Region noch frei ist. Wenn's nicht passt, sagt er das. Kein Verkaufs­gespräch — versprochen.</p>
       </div>
       <a href="tel:+436608640360" class="tel-btn">
-        <span class="ring">
+        <span class="ring" aria-hidden="true">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2.5 3.5C2.5 2.67 3.17 2 4 2h1.5c.32 0 .6.22.67.53l.7 2.8a.7.7 0 01-.18.7l-1.1 1.1c.78 1.6 2.1 2.92 3.7 3.7l1.1-1.1a.7.7 0 01.7-.18l2.8.7c.31.07.53.35.53.67V12.5c0 .83-.67 1.5-1.5 1.5H12C6.48 14 2 9.52 2 4v-.5z" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </span>
         <span>
@@ -749,30 +302,30 @@ footer{background:var(--ink);color:rgba(245,241,234,.7);padding:60px 0 28px;bord
   <div class="wrap">
     <div class="section-head fade-up">
       <span class="eyebrow">Ehrlicher Vergleich</span>
-      <h2>Schau-Kunden.<br>Oder Auftrag.</h2>
+      <h2>Plattform-Lotterie.<br>Oder System.</h2>
     </div>
     <div class="compare-grid fade-up">
       <div class="cmp cmp-bad">
-        <h3>TYPISCHE ANFRAGE</h3>
+        <h3>OHNE SYSTEM</h3>
         <ul class="cmp-list">
-          <li>„Können Sie mal vorbeikommen und schauen?" — kostenlos, versteht sich</li>
-          <li>Will drei Vergleichsangebote, nimmt am Ende den Schwager</li>
-          <li>Hat im Internet gelesen, wie es richtig geht</li>
-          <li>Tausend Sonderwünsche, die mit dem Projekt nichts zu tun haben</li>
-          <li>Diskutiert jede Position der Rechnung</li>
-          <li>Zahlt nach 45 Tagen — wenn überhaupt ohne Mahnung</li>
+          <li>„Können Sie mal vorbeikommen und schauen?"</li>
+          <li>„Mein Nachbar zahlt für sowas die Hälfte"</li>
+          <li>„Hab im Internet gelesen, wie das richtig geht"</li>
+          <li>Kunde diskutiert jede Position der Rechnung</li>
+          <li>Zahlung kommt erst nach Mahnung — wenn überhaupt</li>
+          <li>Mal Vollgas, mal Leerlauf — null Planbarkeit</li>
         </ul>
       </div>
       <div class="cmp-vs">vs.</div>
       <div class="cmp cmp-good">
-        <h3>CRAFTCORE-ANFRAGE</h3>
+        <h3>MIT MARIO</h3>
         <ul class="cmp-list">
-          <li>Hat ein konkretes Projekt — und einen Termin im Kopf</li>
-          <li>Budget vorab geklärt, akzeptiert es als Rahmen</li>
-          <li>Vertraut Ihrem Urteil als Profi — fragt, statt zu belehren</li>
-          <li>Weiß, was er will. Keine Schwager-Theorien</li>
-          <li>Kennt Anzahlungs- und Zahlungs­bedingungen vorher</li>
-          <li>Pünktliche Zahlung — weil das Erwartung ist, nicht Bonus</li>
+          <li>Anfrage mit Bedarf, Budget &amp; Termin — fertig</li>
+          <li>Kunde kennt Ihren Preis­rahmen vorher</li>
+          <li>Vertraut Ihrem Urteil — fragt, statt zu belehren</li>
+          <li>Anzahlung &amp; Zahlungs­ziel sind vorher geklärt</li>
+          <li>Klare Erwartungen auf beiden Seiten</li>
+          <li>Planbares Anfragevolumen, an Ihre Kapazität angepasst</li>
         </ul>
       </div>
     </div>
@@ -785,41 +338,44 @@ footer{background:var(--ink);color:rgba(245,241,234,.7);padding:60px 0 28px;bord
     <div class="section-head fade-up">
       <span class="eyebrow">Aus der Praxis</span>
       <h2>Was Inhaber sagen,<br>die den Schritt gemacht haben.</h2>
-      <p class="lead">Drei von ihnen erzählen, was sich geändert hat.</p>
     </div>
+    <!-- ⚠️ HIER ECHTE TESTIMONIALS EINSETZEN.
+         Die folgenden Beispiele sind PLATZHALTER und müssen vor Launch
+         durch echte Kundenstimmen ersetzt werden (mit Einverständnis).
+         Erfundene Testimonials sind in DE/AT wettbewerbsrechtlich riskant. -->
     <div class="testi-grid fade-up">
-      <div class="testi">
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-q">Früher: drei Stunden raus zum Aufmaß, dann hat sich der Kunde „nochmal überlegt." Heute kommt das Angebot raus, bevor der Termin überhaupt ist. Und es wird unterschrieben.</p>
+      <article class="testi">
+        <div class="testi-stars" aria-label="5 von 5 Sternen">★★★★★</div>
+        <p class="testi-q">„Drei Stunden raus zum Aufmaß für nichts — das ist vorbei. Heute weiß ich beim ersten Telefonat, ob's was wird."</p>
         <div class="testi-attr">
-          <div class="name">Axhijaj Installationen GmbH</div>
-          <div class="meta">SHK · 8 Mitarbeiter · Wien · 14 Monate Partner</div>
+          <div class="name">[Echter Kundenname]</div>
+          <div class="meta">[Gewerk] · [Mitarbeiter] · [Region] · [Dauer als Partner]</div>
         </div>
-      </div>
-      <div class="testi">
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-q">Was sich am meisten geändert hat: Diese Kunden vertrauen mir. Sie fragen, statt zu belehren. Keine Internet-Halbwahrheiten am Telefon. Endlich kann ich wieder Handwerker sein.</p>
+      </article>
+      <article class="testi">
+        <div class="testi-stars" aria-label="5 von 5 Sternen">★★★★★</div>
+        <p class="testi-q">„Sie fragen, statt zu belehren. Endlich kann ich wieder Handwerker sein, statt Verkäufer und Therapeut in einer Person."</p>
         <div class="testi-attr">
-          <div class="name">Steinbacher Elektro e.K.</div>
-          <div class="meta">PV & E-Installation · Bayern · 9 Monate Partner</div>
+          <div class="name">[Echter Kundenname]</div>
+          <div class="meta">[Gewerk] · [Mitarbeiter] · [Region] · [Dauer als Partner]</div>
         </div>
-      </div>
-      <div class="testi">
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-q">Anzahlung ist jetzt Standard. Die Schlussrechnung wird gezahlt, bevor das Mahnsystem überhaupt anspringt. Erstes Mal seit Jahren, dass meine Liquidität wirklich passt.</p>
+      </article>
+      <article class="testi">
+        <div class="testi-stars" aria-label="5 von 5 Sternen">★★★★★</div>
+        <p class="testi-q">„Anzahlung ist Standard, kein Mahnwesen mehr. Endlich kann ich auch mal Material auf Lager nehmen, ohne nachts wachzuliegen."</p>
         <div class="testi-attr">
-          <div class="name">Badsanierung Kurz GmbH</div>
-          <div class="meta">Bad & Fliesen · Stuttgart · 11 Monate Partner</div>
+          <div class="name">[Echter Kundenname]</div>
+          <div class="meta">[Gewerk] · [Mitarbeiter] · [Region] · [Dauer als Partner]</div>
         </div>
-      </div>
+      </article>
     </div>
 
+    <!-- Ergebniskennzahlen entfernt — bis echte Kennzahlen vorliegen -->
+    <!--
     <div class="results fade-up">
-      <div class="result"><div class="num">1 Tag</div><div class="lbl">vom Anruf zum Angebot</div></div>
-      <div class="result"><div class="num">65 %</div><div class="lbl">Ø Abschlussrate</div></div>
-      <div class="result"><div class="num">14 Tage</div><div class="lbl">Ø Zahlungseingang</div></div>
-      <div class="result"><div class="num">−70 %</div><div class="lbl">unnötige Diskussionen</div></div>
+      <div class="result"><div class="num">…</div><div class="lbl">…</div></div>
     </div>
+    -->
   </div>
 </section>
 
@@ -829,27 +385,27 @@ footer{background:var(--ink);color:rgba(245,241,234,.7);padding:60px 0 28px;bord
     <div class="about-grid">
       <div class="about-card fade-up">
         <div class="about-portrait">
-          <span class="avatar-letter">M</span>
+          <img src="img/mario-portrait-baustelle.jpg" alt="Mario Stefek auf einer Baustelle" loading="lazy">
         </div>
         <div class="about-card-foot">
           <div class="name">Mario Stefek</div>
-          <div class="role">Gründer · CraftCore</div>
+          <div class="role">Inhaber · Vermittlung Handwerksaufträge</div>
         </div>
       </div>
       <div class="about-content fade-up">
-        <span class="eyebrow" style="margin-bottom:20px;display:inline-flex">Wer dahinter steht</span>
-        <h2>Mario Stefek.<br>Kennt das Spiel.</h2>
-        <p>Im Vertrieb für einen mittelständischen SHK-Betrieb. Hunderte Kundengespräche geführt, hunderte Angebote geschrieben. Die Gefühle nach den „Schau-Terminen" kenne ich. Die Wut über offene Rechnungen auch.</p>
-        <p><strong>Was mich angetrieben hat:</strong> Ich habe gesehen, wie gute Handwerker Stunden an Kunden verlieren, die alles besser wissen — und denen man am Ende noch hinterherläuft, damit sie zahlen. Das hat nichts mit Handwerk zu tun. Das ist falsche Selektion.</p>
-        <p>2019 habe ich CraftCore gegründet, damit Inhaber das machen können, wofür sie ausgebildet sind: arbeiten. Nicht erklären, nicht rechtfertigen, nicht mahnen. Wenn Sie ehrlich wissen wollen, ob das Ihre Probleme löst — rufen Sie an. 20 Minuten.</p>
+        <span class="eyebrow" style="margin-bottom:18px;display:inline-flex">Wer dahinter steht</span>
+        <h2>Mario Stefek.<br>Kein Marketing-Mensch.</h2>
+        <p>Im Vertrieb für einen mittelständischen SHK-Betrieb groß geworden. Kunden­telefonate. Angebots­kalkulationen. Mahn­wesen. Erlebt, wie Aufträge zustande kommen — und wie sie scheitern.</p>
+        <p><strong>Was mich angetrieben hat:</strong> Ich habe gesehen, wie die <strong>besten</strong> Betriebe systematisch schlechter dastehen als die billigsten. Nicht weil sie schlechter sind. Weil das System falsch ist.</p>
+        <p>2019 habe ich den Schritt in die Selbstständigkeit gemacht — damit Inhaber das machen können, wofür sie ausgebildet sind: arbeiten. Nicht erklären, nicht rechtfertigen, nicht mahnen. Wenn Sie ehrlich wissen wollen, ob das Ihre Probleme löst — rufen Sie an. 20 Minuten.</p>
         <span class="about-sig">Mario Stefek</span>
         <div class="about-cta">
           <a href="tel:+436608640360" class="tel-btn">
-            <span class="ring">
+            <span class="ring" aria-hidden="true">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2.5 3.5C2.5 2.67 3.17 2 4 2h1.5c.32 0 .6.22.67.53l.7 2.8a.7.7 0 01-.18.7l-1.1 1.1c.78 1.6 2.1 2.92 3.7 3.7l1.1-1.1a.7.7 0 01.7-.18l2.8.7c.31.07.53.35.53.67V12.5c0 .83-.67 1.5-1.5 1.5H12C6.48 14 2 9.52 2 4v-.5z" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </span>
             <span>
-              <span class="lbl">Direkt mit Mario</span>
+              <span class="lbl">Mario direkt anrufen</span>
               <span class="num">+43 660 8640360</span>
             </span>
           </a>
@@ -868,67 +424,63 @@ footer{background:var(--ink);color:rgba(245,241,234,.7);padding:60px 0 28px;bord
     </div>
     <div class="faq-list fade-up">
       <div class="faq-item" onclick="toggleFaq(this)">
-        <div class="faq-q">Wie filtert ihr „Schau-Kunden" raus?<div class="faq-plus">+</div></div>
-        <div class="faq-a">Bevor wir eine Anfrage übergeben, wird abgefragt: Konkretes Projekt? Realistischer Zeitrahmen? Budget genannt und akzeptiert? Anzahlungs­bereitschaft? Wer da ausweicht oder „nur mal schauen" will, kommt nie bei Ihnen an. Wir verlieren lieber zehn schlechte Anfragen als Ihre Zeit.</div>
+        <div class="faq-q">Wie filtert ihr „Schau-Kunden" wirklich raus?<div class="faq-plus" aria-hidden="true">+</div></div>
+        <div class="faq-a">Vor jedem Kontakt zu Ihnen klären wir mit dem Kunden: konkrete Aufgaben­beschreibung, Budget­rahmen, Wunsch­termin. Wer keine Antwort hat, fliegt aus dem Trichter — bevor er Ihre Zeit kostet.</div>
       </div>
       <div class="faq-item" onclick="toggleFaq(this)">
-        <div class="faq-q">Bekommen wir wirklich Zeit zum sauberen Kalkulieren?<div class="faq-plus">+</div></div>
-        <div class="faq-a">Ja. Die Anfrage kommt mit allen Eckdaten — Projektumfang, Bestand, Budget­rahmen, Zeitplan. Sie können in Ruhe kalkulieren, ohne dass der Kunde drei Tage später schon nachhakt. Wir kommunizieren dem Kunden vorab, dass ein seriöses Angebot Zeit braucht. <strong>Hektik-Angebote — die Sie später schmerzen — gehören nicht zu unserem Modell.</strong></div>
+        <div class="faq-q">Wie viel Zeit habe ich für ein sauberes Angebot?<div class="faq-plus" aria-hidden="true">+</div></div>
+        <div class="faq-a">Der Kunde weiß vorher: Sie melden sich innerhalb weniger Werktage mit einem fertigen Angebot. Kein Drängeln. Kein Mittagspause-Pricing. Wir steuern die Erwartungen auf der Kunden­seite, damit Sie auf Ihrer Seite <strong>sauber kalkulieren</strong> können.</div>
       </div>
       <div class="faq-item" onclick="toggleFaq(this)">
-        <div class="faq-q">Was ist mit den Kunden, die alles besser wissen?<div class="faq-plus">+</div></div>
-        <div class="faq-a">Wir filtern auf Vertrauen, nicht nur auf Budget. Im Vorgespräch erkennen wir den Internet-Experten, den „mein-Schwager-hat-gesagt"-Typ und den, der Sie als ausführendes Werkzeug missversteht. Die kommen nicht durch. Was bei Ihnen ankommt: Kunden, die Profis als Profis behandeln.</div>
+        <div class="faq-q">Was ist mit den Kunden, die alles besser wissen?<div class="faq-plus" aria-hidden="true">+</div></div>
+        <div class="faq-a">Wer im Vorgespräch mit „Ich hab im Internet gelesen…" anfängt, kommt nicht durch. Wir suchen Kunden, die einen <strong>Profi beauftragen wollen</strong> — nicht jemanden, dem sie ihren YouTube-Kurs erklären. Punkt.</div>
       </div>
       <div class="faq-item" onclick="toggleFaq(this)">
-        <div class="faq-q">Wie sieht's mit der Zahlungsmoral aus?<div class="faq-plus">+</div></div>
-        <div class="faq-a">Wir besprechen mit dem Kunden vorab Anzahlung, Teilzahlungen und Schluss­rechnungs­frist — schriftlich. Wer das nicht akzeptiert, kommt nicht zu Ihnen. Wer kommt, hält sich daran. Unsere Partner berichten von Ø 14 Tagen Zahlungseingang statt 42. <strong>Das ist kein Zufall — das ist Vorauswahl.</strong></div>
+        <div class="faq-q">Wie sieht's mit der Zahlungsmoral aus?<div class="faq-plus" aria-hidden="true">+</div></div>
+        <div class="faq-a">Anzahlung und Zahlungs­bedingungen sind im Erstgespräch geklärt. Wer keine Anzahlung leisten will oder bei normalen Zahlungs­zielen nervös wird, kommt gar nicht erst zu Ihnen.</div>
       </div>
       <div class="faq-item" onclick="toggleFaq(this)">
-        <div class="faq-q">Was kostet das — und gibt es versteckte Kosten?<div class="faq-plus">+</div></div>
-        <div class="faq-a">Ein monatlicher Pauschalbetrag, abhängig von Gewerk und Region. <strong>Keine Provision pro Auftrag, keine Einrichtungsgebühr, keine Vertragslaufzeit.</strong> Sie können monatlich kündigen — ohne Begründung. Den genauen Betrag nennt Ihnen Mario im Erstgespräch, nachdem klar ist, was Ihre Region hergibt.</div>
+        <div class="faq-q">Was kostet das — und gibt es versteckte Kosten?<div class="faq-plus" aria-hidden="true">+</div></div>
+        <div class="faq-a">Eine monatliche Pauschale, abhängig von Gewerk und Region. <strong>Keine Provision pro Auftrag. Keine Einrichtungs­gebühr. Keine Vertragslaufzeit.</strong> Den genauen Betrag nennt Ihnen Mario im Erstgespräch — nachdem klar ist, was Ihre Region hergibt.</div>
       </div>
       <div class="faq-item" onclick="toggleFaq(this)">
-        <div class="faq-q">Was, wenn die Anfragen trotzdem nicht passen?<div class="faq-plus">+</div></div>
-        <div class="faq-a">Dann kündigen Sie. Monatlich, ohne Begründung. Wir ersetzen Anfragen, die unsere Qualitäts­standards nicht erfüllen, kostenlos. Die ersten 30 Tage sind durch unsere Geld-zurück-Garantie abgesichert. Wir verdienen nur, wenn Sie zufrieden bleiben.</div>
+        <div class="faq-q">Was, wenn die Anfragen nicht gut genug sind?<div class="faq-plus" aria-hidden="true">+</div></div>
+        <div class="faq-a">Dann kündigen Sie. <strong>Monatlich, ohne Begründung.</strong> Wir ersetzen Anfragen, die unsere Qualitäts­standards nicht erfüllen. Plus: Die ersten 30 Tage sind durch unsere Geld-zurück-Garantie abgesichert. Wir verdienen nur, wenn Sie zufrieden bleiben.</div>
       </div>
       <div class="faq-item" onclick="toggleFaq(this)">
-        <div class="faq-q">Muss ich Technik, Werbung oder eine Website beistellen?<div class="faq-plus">+</div></div>
-        <div class="faq-a">Nein. Setup, Werbung, Filterung — alles übernehmen wir. Sie brauchen keine eigene Website, kein Google-Budget, kein Social Media. Sie bekommen fertig aufbereitete Anfragen. Voraussetzung: ein Telefon und Zeit für das Abschlussgespräch.</div>
-      </div>
-      <div class="faq-item" onclick="toggleFaq(this)">
-        <div class="faq-q">Für welche Betriebsgrößen funktioniert das?<div class="faq-plus">+</div></div>
-        <div class="faq-a">Inhabergeführte Betriebe von 2 bis 25 Mitarbeitern. Wir passen das Anfrage­volumen an Ihre tatsächliche Kapazität an — Sie bekommen nie mehr Anfragen, als Sie sinnvoll bearbeiten können. Wenn wir glauben, dass Ihr Betrieb nicht passt, sagen wir das beim ersten Gespräch.</div>
+        <div class="faq-q">Für welche Betriebsgrößen funktioniert das?<div class="faq-plus" aria-hidden="true">+</div></div>
+        <div class="faq-a">Inhabergeführte Betriebe von 2 bis 25 Mitarbeitern. Wir passen das Anfragevolumen an Ihre tatsächliche Kapazität an — Sie bekommen nie mehr Anfragen, als Sie sinnvoll bearbeiten können. Wenn Mario glaubt, dass Ihr Betrieb nicht passt, sagt er das beim ersten Gespräch.</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ── CALLBACK FORM ── -->
-<section class="callback" id="rueckruf">
+<!-- ── CALLBACK / WHATSAPP-FORMULAR ── -->
+<section class="callback" id="kontakt">
   <div class="wrap">
     <div class="callback-grid">
       <div class="callback-text">
-        <span class="eyebrow" style="margin-bottom:18px;display:inline-flex">Lieber zurückrufen lassen?</span>
-        <h3>Tragen Sie Ihre Nummer ein — Mario meldet sich werktags innerhalb von 4 Stunden.</h3>
-        <p>Kein automatisierter Newsletter. Kein Vertriebsteam. Mario persönlich. Im Erstgespräch (ca. 20 Min.) klären wir, ob Ihr Gebiet noch frei ist und ob CraftCore zu Ihrem Betrieb passt.</p>
+        <span class="eyebrow" style="margin-bottom:16px;display:inline-flex">Lieber per WhatsApp?</span>
+        <h3>Schreiben Sie Mario. Antwort werktags innerhalb von 4 Stunden.</h3>
+        <p>Kein automatisierter Newsletter. Kein Vertriebsteam. Mario persönlich. Im Erstgespräch (ca. 20 Min.) klären wir, ob Ihr Gebiet noch frei ist und ob das Ganze zu Ihrem Betrieb passt.</p>
         <div class="or-tel">
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" style="stroke:var(--ink-soft)"><path d="M2 3.5C2 2.67 2.67 2 3.5 2h1.31c.31 0 .59.21.66.51l.6 2.4a.7.7 0 01-.18.7l-.96.96c.66 1.37 1.78 2.49 3.15 3.15l.96-.96a.7.7 0 01.7-.18l2.4.6c.3.07.51.35.51.66V11.5c0 .83-.67 1.5-1.5 1.5h-.5C5.91 13 1 8.09 1 2v-.5z" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" style="stroke:var(--ink-soft)" aria-hidden="true"><path d="M2 3.5C2 2.67 2.67 2 3.5 2h1.31c.31 0 .59.21.66.51l.6 2.4a.7.7 0 01-.18.7l-.96.96c.66 1.37 1.78 2.49 3.15 3.15l.96-.96a.7.7 0 01.7-.18l2.4.6c.3.07.51.35.51.66V11.5c0 .83-.67 1.5-1.5 1.5h-.5C5.91 13 1 8.09 1 2v-.5z" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           oder direkt anrufen: <a href="tel:+436608640360">+43 660 8640360</a>
         </div>
       </div>
       <div class="callback-form">
-        <div id="cb-form">
+        <form id="cb-form" onsubmit="return submitCb(event)" novalidate>
           <div class="fg">
-            <label>Ihr Name &amp; Betrieb</label>
-            <input type="text" id="cb-name" placeholder="z. B. Thomas Huber, Huber Haustechnik">
+            <label for="cb-name">Ihr Name &amp; Betrieb</label>
+            <input type="text" id="cb-name" name="name" required autocomplete="name" placeholder="z. B. Thomas Huber, Huber Haustechnik">
           </div>
           <div class="fg">
-            <label>Ihre Telefonnummer</label>
-            <input type="tel" id="cb-tel" placeholder="+43 / +49 …">
+            <label for="cb-tel">Ihre Telefonnummer</label>
+            <input type="tel" id="cb-tel" name="tel" required autocomplete="tel" placeholder="+43 / +49 …">
           </div>
           <div class="fg">
-            <label>Ihr Gewerk</label>
-            <select id="cb-gewerk">
+            <label for="cb-gewerk">Ihr Gewerk</label>
+            <select id="cb-gewerk" name="gewerk" required>
               <option value="">Bitte wählen…</option>
               <option>Sanitär, Heizung, Klima</option>
               <option>Elektro / Photovoltaik</option>
@@ -936,20 +488,24 @@ footer{background:var(--ink);color:rgba(245,241,234,.7);padding:60px 0 28px;bord
               <option>Innenausbau / Trockenbau</option>
               <option>Maler &amp; Stuckateure</option>
               <option>Dachdecker</option>
+              <option>Fensterbau / Verglasung</option>
               <option>Anderes</option>
             </select>
           </div>
           <div class="fg">
-            <label>Postleitzahl</label>
-            <input type="text" id="cb-plz" placeholder="z. B. 1010 oder 80331">
+            <label for="cb-plz">Postleitzahl</label>
+            <input type="text" id="cb-plz" name="plz" required autocomplete="postal-code" inputmode="numeric" placeholder="z. B. 1010 oder 80331">
           </div>
-          <button class="form-submit" onclick="submitCb()">Mario soll mich zurückrufen →</button>
-          <p class="form-note">DSGVO-konform · Keine Weitergabe an Dritte · Jederzeit widerrufbar</p>
-        </div>
-        <div id="cb-success" class="form-success">
-          <div class="check">✓</div>
-          <h4>Nachricht erhalten.</h4>
-          <p>Mario meldet sich werktags innerhalb von 4 Stunden — meist schneller. Bei dringenden Anliegen rufen Sie ihn direkt an: +43 660 8640360.</p>
+          <button type="submit" class="form-submit form-submit-wa">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.07 21.785h-.005a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.98.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.889-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.886-9.885 9.886zm8.413-18.297A11.815 11.815 0 0012.067 0C5.495 0 .142 5.335.14 11.892c0 2.096.546 4.142 1.587 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.46-8.413z"/></svg>
+            Per WhatsApp senden
+          </button>
+          <p class="form-note">Öffnet WhatsApp mit vorausgefüllter Nachricht · DSGVO-konform · Keine Weitergabe an Dritte</p>
+        </form>
+        <div id="cb-success" class="form-success" role="status" aria-live="polite">
+          <div class="check" aria-hidden="true">✓</div>
+          <h4>WhatsApp wurde geöffnet.</h4>
+          <p>Senden Sie die vorbereitete Nachricht ab — Mario meldet sich werktags innerhalb von 4 Stunden. Bei dringenden Anliegen: <a href="tel:+436608640360" style="color:var(--orange-deep);font-weight:600">+43 660 8640360</a>.</p>
         </div>
       </div>
     </div>
@@ -957,17 +513,17 @@ footer{background:var(--ink);color:rgba(245,241,234,.7);padding:60px 0 28px;bord
 </section>
 
 <!-- ── FINAL CTA ── -->
-<section class="section final" id="kontakt">
+<section class="final" id="anrufen">
   <div class="wrap">
     <div class="final-inner">
-      <span class="eyebrow" style="color:rgba(245,241,234,.7);justify-content:center;display:inline-flex;margin-bottom:24px">Letzter Schritt</span>
+      <span class="eyebrow" style="color:rgba(245,241,234,.7);justify-content:center;display:inline-flex;margin-bottom:22px">Letzter Schritt</span>
       <h2>Schluss mit Schau-Kunden,<br>Diskussionen und <em>Mahnungen.</em></h2>
       <p class="final-deck">
-        20 Minuten am Telefon mit Mario. Sie sagen, was Sie nervt. Er sagt, ob CraftCore das löst. Wenn nicht, hören Sie das auch. Pro Region und Gewerk ein Betrieb — danach ist die Tür zu.
+        20 Minuten am Telefon mit Mario. Sie sagen, was Sie nervt. Er sagt, ob er Ihnen das abnehmen kann. Wenn nicht, hören Sie das auch. Pro Region und Gewerk ein Betrieb — danach ist die Tür zu.
       </p>
       <div class="final-cta-stack">
         <a href="tel:+436608640360" class="tel-btn">
-          <span class="ring">
+          <span class="ring" aria-hidden="true">
             <svg width="20" height="20" viewBox="0 0 16 16" fill="none"><path d="M2.5 3.5C2.5 2.67 3.17 2 4 2h1.5c.32 0 .6.22.67.53l.7 2.8a.7.7 0 01-.18.7l-1.1 1.1c.78 1.6 2.1 2.92 3.7 3.7l1.1-1.1a.7.7 0 01.7-.18l2.8.7c.31.07.53.35.53.67V12.5c0 .83-.67 1.5-1.5 1.5H12C6.48 14 2 9.52 2 4v-.5z" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </span>
           <span>
@@ -976,23 +532,23 @@ footer{background:var(--ink);color:rgba(245,241,234,.7);padding:60px 0 28px;bord
           </span>
         </a>
         <span class="final-or">oder</span>
-        <a href="#rueckruf" class="final-form-link">Rückruf anfordern (1 Min.)</a>
+        <a href="#kontakt" class="final-form-link">Per WhatsApp anfragen (1 Min.)</a>
       </div>
       <div class="final-trust">
         <div class="final-trust-item">
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l3 3 7-7" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7l3 3 7-7" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           Monatlich kündbar
         </div>
         <div class="final-trust-item">
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l3 3 7-7" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7l3 3 7-7" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           30 Tage Geld-zurück
         </div>
         <div class="final-trust-item">
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l3 3 7-7" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7l3 3 7-7" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           1 Partner pro Region
         </div>
         <div class="final-trust-item">
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l3 3 7-7" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7l3 3 7-7" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           DSGVO-konform
         </div>
       </div>
@@ -1006,22 +562,22 @@ footer{background:var(--ink);color:rgba(245,241,234,.7);padding:60px 0 28px;bord
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="#" class="logo">
-          <span class="logo-mark">
+          <span class="logo-mark" aria-hidden="true">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L7 2l5 10M4.5 8h5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </span>
-          CraftCore
+          Mario Stefek
         </a>
-        <p>Vorqualifizierte Premiumaufträge für inhabergeführte Handwerksbetriebe. Seit 2019.</p>
+        <p>Vorqualifizierte Premium­aufträge für inhabergeführte Handwerksbetriebe. Seit 2019.</p>
         <a href="tel:+436608640360" class="footer-tel">
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" style="stroke:currentColor"><path d="M2 3.5C2 2.67 2.67 2 3.5 2h1.31c.31 0 .59.21.66.51l.6 2.4a.7.7 0 01-.18.7l-.96.96c.66 1.37 1.78 2.49 3.15 3.15l.96-.96a.7.7 0 01.7-.18l2.4.6c.3.07.51.35.51.66V11.5c0 .83-.67 1.5-1.5 1.5h-.5C5.91 13 1 8.09 1 2v-.5z" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" style="stroke:currentColor" aria-hidden="true"><path d="M2 3.5C2 2.67 2.67 2 3.5 2h1.31c.31 0 .59.21.66.51l.6 2.4a.7.7 0 01-.18.7l-.96.96c.66 1.37 1.78 2.49 3.15 3.15l.96-.96a.7.7 0 01.7-.18l2.4.6c.3.07.51.35.51.66V11.5c0 .83-.67 1.5-1.5 1.5h-.5C5.91 13 1 8.09 1 2v-.5z" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           +43 660 8640360
         </a>
       </div>
       <div class="footer-col">
-        <h5>Navigation</h5>
-        <a href="#rueckruf">Rückruf</a>
-        <a href="#kontakt">Kontakt</a>
+        <h5>Kontakt</h5>
         <a href="tel:+436608640360">Telefon</a>
+        <a href="#kontakt">WhatsApp</a>
+        <a href="#anrufen">Erstgespräch</a>
       </div>
       <div class="footer-col">
         <h5>Rechtliches</h5>
@@ -1037,7 +593,7 @@ footer{background:var(--ink);color:rgba(245,241,234,.7);padding:60px 0 28px;bord
         <a href="datenschutz.html">Datenschutz</a>
         <a href="agb.html">AGB</a>
       </div>
-      <p>© 2026 CraftCore · Mario Stefek</p>
+      <p>© 2026 Mario Stefek · Alle Rechte vorbehalten</p>
     </div>
   </div>
 </footer>
@@ -1045,44 +601,82 @@ footer{background:var(--ink);color:rgba(245,241,234,.7);padding:60px 0 28px;bord
 <!-- ── STICKY MOBILE TEL ── -->
 <div class="sticky-tel">
   <a href="tel:+436608640360">
-    <svg width="18" height="18" viewBox="0 0 16 16" fill="none" style="stroke:currentColor"><path d="M2.5 3.5C2.5 2.67 3.17 2 4 2h1.5c.32 0 .6.22.67.53l.7 2.8a.7.7 0 01-.18.7l-1.1 1.1c.78 1.6 2.1 2.92 3.7 3.7l1.1-1.1a.7.7 0 01.7-.18l2.8.7c.31.07.53.35.53.67V12.5c0 .83-.67 1.5-1.5 1.5H12C6.48 14 2 9.52 2 4v-.5z" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <svg width="18" height="18" viewBox="0 0 16 16" fill="none" style="stroke:currentColor" aria-hidden="true"><path d="M2.5 3.5C2.5 2.67 3.17 2 4 2h1.5c.32 0 .6.22.67.53l.7 2.8a.7.7 0 01-.18.7l-1.1 1.1c.78 1.6 2.1 2.92 3.7 3.7l1.1-1.1a.7.7 0 01.7-.18l2.8.7c.31.07.53.35.53.67V12.5c0 .83-.67 1.5-1.5 1.5H12C6.48 14 2 9.52 2 4v-.5z" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
     Mario anrufen — +43 660 8640360
   </a>
 </div>
 
+<!-- ── FLOATING WHATSAPP BUBBLE ── -->
+<a href="https://wa.me/436608640360?text=Hallo%20Mario%2C%20ich%20interessiere%20mich%20f%C3%BCr%20Ihre%20Vermittlung%20von%20Handwerksauftr%C3%A4gen." target="_blank" rel="noopener" class="wa-float" aria-label="Mario per WhatsApp kontaktieren">
+  <span class="wa-float-label">WhatsApp an Mario</span>
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.07 21.785h-.005a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.98.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.889-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.886-9.885 9.886zm8.413-18.297A11.815 11.815 0 0012.067 0C5.495 0 .142 5.335.14 11.892c0 2.096.546 4.142 1.587 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.46-8.413z"/></svg>
+</a>
+
 <script>
-// FAQ toggle
+/* ============================================================
+   Mario Stefek – Site JS
+   Klein gehalten, kein Framework, vanilla JS.
+   ============================================================ */
+
+// ─── Marios WhatsApp-Nummer (international, ohne + und Leerzeichen) ───
+const WA_NUMBER = '436608640360';
+
+// ─── FAQ Accordion ───
 function toggleFaq(el){
   const open = el.classList.contains('open');
   document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
   if(!open) el.classList.add('open');
 }
 
-// Callback form
-function submitCb(){
-  const name = document.getElementById('cb-name').value.trim();
-  const tel = document.getElementById('cb-tel').value.trim();
+// ─── Formular → WhatsApp ───
+function submitCb(event){
+  event.preventDefault();
+
+  const name   = document.getElementById('cb-name').value.trim();
+  const tel    = document.getElementById('cb-tel').value.trim();
   const gewerk = document.getElementById('cb-gewerk').value;
-  const plz = document.getElementById('cb-plz').value.trim();
+  const plz    = document.getElementById('cb-plz').value.trim();
+
   if(!name || !tel || !gewerk || !plz){
-    alert('Bitte alle Felder ausfüllen.');
-    return;
+    alert('Bitte füllen Sie alle Felder aus.');
+    return false;
   }
+
+  // Vorbereitete WhatsApp-Nachricht
+  const message =
+    'Hallo Mario,\n\n' +
+    'ich hätte gerne ein Erstgespräch zu Ihrer Auftragsvermittlung.\n\n' +
+    '• Name & Betrieb: ' + name + '\n' +
+    '• Telefon: ' + tel + '\n' +
+    '• Gewerk: ' + gewerk + '\n' +
+    '• PLZ: ' + plz + '\n\n' +
+    'Bitte um Rückmeldung. Danke!';
+
+  // wa.me funktioniert auf Mobile (öffnet WhatsApp-App) und Desktop (öffnet WhatsApp Web)
+  const waUrl = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(message);
+  window.open(waUrl, '_blank', 'noopener');
+
+  // Erfolgsmeldung anzeigen
   document.getElementById('cb-form').style.display = 'none';
   document.getElementById('cb-success').classList.add('show');
+  return false;
 }
 
-// Scroll fade-in
-const els = document.querySelectorAll('.fade-up');
-const obs = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if(e.isIntersecting){
-      e.target.classList.add('in');
-      obs.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.12 });
-els.forEach(el => obs.observe(el));
+// ─── Scroll Fade-In ───
+const fadeEls = document.querySelectorAll('.fade-up');
+if('IntersectionObserver' in window){
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if(e.isIntersecting){
+        e.target.classList.add('in');
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  fadeEls.forEach(el => obs.observe(el));
+} else {
+  fadeEls.forEach(el => el.classList.add('in'));
+}
 </script>
 </body>
 </html>
