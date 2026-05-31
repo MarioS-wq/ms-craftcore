@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /img/
-
-Sitemap: https://www.mario-stefek.com/sitemap.xml
